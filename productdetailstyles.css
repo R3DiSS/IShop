@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;1,600&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+font-family: "Rubik", "sans-serif";
+}
+.logo 
+{
+    width: 180px;
+}
+
+
+.header1{
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--bg-color);
+    box-shadow: 0 1px 4px hsl(0 4% 15% / 10%);
+    z-index: 100%;
+    
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.container{
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+.img{
+  width:180px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.single-product{
+    margin-top: 200px;
+}
+
+.col-2 img{
+  max-width: 40%;
+  padding: 50px 0;
+  position:relative;
+}
+.single-product .col-2 img{
+    padding:0;
+
+}
+.single-product .col-2{
+    padding: 20px;
+}
+
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+    position: fixed;
+    margin-left: 700px;
+    margin-bottom: 140px;
+}
+
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.single-product select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.single-product h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #ff523b;
+
+}
+input:focus{
+    outline: none;
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}

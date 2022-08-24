@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>MainPage</title>
+    <link rel ="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+ <section>
+    <ul>
+        <li class="list active" data-filter="All">Всё</li>
+        <li class="list" data-filter="Rings">Кольца</li>
+        <li class="list" data-filter="Necklaces">Цепочки</li>
+
+        <li class="list" data-filter="Silver">Серебрянные</li>
+        <li class="list" data-filter="Gold">Золотые</li>
+
+    </ul>
+ </section>
+ <div class = "bg-image">
+    <header>
+      <div class ="nav container">
+            <a href = "#" class ="logo"><img src ="images/Logo-removebg-preview (1).png"></a>
+            <h2 id="cart-icon">Корзина</h2>
+        <div class ="cart">
+            <h2 class = "cart-title">Корзина</h2>
+            <!--Content-->
+            <div class="cart-content">
+                
+            
+            </div>
+        <!--calculating Total-->
+         <div class="total">
+         <div class="total-title">Всего: </div>
+          <div class="total-price">тг0</div>
+         </div>
+         <!--Buy Button-->
+         <button type="button" class="btn-buy">Купить!</button>
+         <!--Closing Cart-->
+         <i class='bx bx-x' id="close-cart"></i>
+        </div>
+        
+
+      </div>
+    </header>
+    <section class ="shop container">
+        <!-- Контент -->
+       <h2 class ="section-title">Приобрести Товар</h2>
+       <div class ="shop-content">
+        <div class ="product-box Rings Gold">
+            <img src="images/Ring1.jpg" alt="" class="product-img">
+            <h2 class="product-title">Кольцо1</h2>
+            <span class="price">6799900тг</span>
+            <i class='bx bxs-cart-add add-cart'></i>
+        </div>
+
+        <div class ="product-box Rings">
+            <img src="images/Ring2.jpg" alt="" class="product-img">
+            <h2 class="product-title">Кольцо2</h2>
+            <span class="price">10999тг</span>
+            <i class='bx bxs-cart-add add-cart'></i>
+        </div>
+
+        <div class ="product-box Rings Gold">
+            <img src="images/Ring3.jpg" alt="" class="product-img">
+            <h2 class="product-title">Кольцо3</h2>
+            <span class="price">7899900тг</span>
+            <i class='bx bxs-cart-add add-cart'></i>
+        </div>
+        <div class ="product-box Rings Gold">
+            <img src="images/Ring4.jpg" alt="" class="product-img">
+            <h2 class="product-title">Кольцо4</h2>
+            <span class="price">2699900тг</span>
+            <i class='bx bxs-cart-add add-cart'></i>
+        </div>
+
+        <div class ="product-box Necklaces">
+            <img src="images/Necklace1.jpg" alt="" class="product-img">
+            <h2 class="product-title">Цепочка1</h2>
+            <span class="price">2699тг</span>
+            <i class='bx bxs-cart-add add-cart'></i>
+        </div>
+
+        <div class ="product-box Necklaces">
+            <img src="images/Necklace2.jpg" alt="" class="product-img">
+            <h2 class="product-title">Цепочка2</h2>
+            <span class="price">3899тг</span>
+            <i class='bx bxs-cart-add add-cart'></i>
+        </div>
+        <div class ="product-box Necklaces">
+            <img src="images/Necklace3.jpg" alt="" class="product-img">
+            <h2 class="product-title">Цепочка3</h2>
+            <span class="price">23699тг</span>
+            <i class='bx bxs-cart-add add-cart'></i>
+        </div>
+        <div class ="product-box Necklaces Gold">
+            <img src="images/Necklace4.jpg" alt="" class="product-img">
+            <h2 class="product-title">Цепочка4</h2>
+            <span class="price">28999тг</span>
+            <i class='bx bxs-cart-add add-cart'></i>
+        </div>
+       </div >
+    </section>    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Компания</h4>
+                    <ul>
+                        <li><a href="">Адресс: Мирзояна 58А</a></li>
+                        <li><a href="">Телеофон: +87471386136</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Социальные Сети</h4>
+                    <ul>
+                        <li class ="Inst"><a href="https://instagram.com/vizavi_kokshetau?igshid=YmMyMTA2M2Y=">instagram<i class='bx bxl-instagram'></i></a></li>
+                    </ul>
+                </div>
+                
+                
+                </div>
+            </div>
+        </div>
+    </footer>                                            
+    <!--JavaScript-->
+    <script src="script.js"></script>
+    <script 
+    src="https://code.jquery.com/jquery-3.6.0.js" 
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
+    crossorigin="anonymous"></script>
+    <script type = "text/javascript">
+        $(document).ready(function(){
+            $(".list").click(function(){
+                const value = $(this).attr("data-filter");
+                if (value == "All"){
+                    $(".product-box").show("1000");
+                }
+                else if(value == "Gold"){
+                    $(".product-box").not("."+ value).hide("1000");
+                    $(".product-box").filter("."+ value).show("1000");
+                }
+                else{
+                    $(".product-box").not("."+ value).hide("1000");
+                    $(".product-box").filter("."+ value).show("1000");
+                }
+
+        
+            })
+            // active class on selected filter
+            $(".list").click(function(){
+                $(this).addClass("active").siblings().removeClass("active");
+
+            })
+        })
+    </script>
+ </div>
+</body>
+</html>
